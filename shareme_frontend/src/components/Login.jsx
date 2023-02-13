@@ -11,6 +11,7 @@ const Login = () => {
 
   const handleCreateOrGetUser = async (response) => {
     const newUser = await createOrGetUser(response)
+    localStorage.setItem('user', JSON.stringify(newUser))
     if (newUser) {
       navigate('/', { replace: true })
     }
