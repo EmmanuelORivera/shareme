@@ -14,7 +14,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
   const navigate = useNavigate()
   const user = fetchUser()
 
-  const alreadySaved = !!save?.filter((item) => item.postedBy._id === user._id)
+  const alreadySaved = !!save?.filter((item) => item.postedBy._id === user?._id)
     .length
 
   const savePin = (id) => {
@@ -25,8 +25,8 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
         .insert('after', 'save[-1]', [
           {
             _key: uuidv4(),
-            userId: user._id,
-            postedBy: { _type: 'postedBy', _ref: user._id },
+            userId: user?._id,
+            postedBy: { _type: 'postedBy', _ref: user?._id },
           },
         ])
         .commit()
@@ -103,7 +103,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
                     : destination}
                 </a>
               )}
-              {postedBy?._id === user._id && (
+              {postedBy?._id === user?._id && (
                 <button
                   onClick={(e) => {
                     e.stopPropagation()
