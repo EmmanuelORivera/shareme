@@ -5,7 +5,6 @@ import Login from './components/Login'
 import Home from './container/Home'
 
 function App() {
-  console.log(import.meta.env.VITE_GOOGLE_API_TOKEN)
   return (
     <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_API_TOKEN}>
       <Routes>
