@@ -21,7 +21,6 @@ const CreatePin = ({ user }) => {
 
   const uploadImage = (e) => {
     const selectedFile = e.target.files[0]
-    console.log(selectedFile)
     if (
       selectedFile.type === 'image/png' ||
       selectedFile.type === 'image/svg' ||
@@ -41,7 +40,7 @@ const CreatePin = ({ user }) => {
           setImageAsset(document)
         })
         .catch((error) => {
-          console.log('Upload failed:', error.message)
+          console.error('Upload failed:', error.message)
         })
         .finally(() => {
           setLoading(false)

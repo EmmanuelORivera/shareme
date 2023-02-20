@@ -38,7 +38,7 @@ const Login = () => {
             <GoogleLogin
               onSuccess={handleCreateOrGetUser}
               onError={() => {
-                console.log('Login Failed')
+                console.error('Login Failed')
               }}
             >
               <button
