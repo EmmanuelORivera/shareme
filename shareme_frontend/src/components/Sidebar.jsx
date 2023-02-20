@@ -61,7 +61,7 @@ const Sidebar = ({ user, closeToggle }) => {
       </div>
       {user && (
         <Link
-          to={`user-profile/${user._id}`}
+          to={`/user-profile/${user._id}`}
           className="flex items-center my-5 mb-2 gap-2 bg-white rounded-lg shadow-lg mx-3"
           onClick={handleCloseSidebar}
         >
