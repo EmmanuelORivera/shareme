@@ -1,5 +1,11 @@
 # Shareme Project
 You can visit this deployed proyect on this url: [https://share-me95.netlify.app](https://share-me95.netlify.app/).
+## Login
+![login](https://user-images.githubusercontent.com/36383283/220424983-ffeccfc3-cdd4-45f0-b8cf-2b9ce3a58783.png)
+## home-page
+![home-page](https://user-images.githubusercontent.com/36383283/220425211-77dcb9c6-02b9-4377-b246-275db3b3d13f.png)
+## user-profile
+![user-profile](https://user-images.githubusercontent.com/36383283/220425478-d1575853-07c5-46e9-8380-ff5c16874fd9.png)
 
 
 ## React frontend app created with Vite and styled with tailwind
