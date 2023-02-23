@@ -16,7 +16,7 @@ You can visit this deployed proyect on this url: [https://share-me95.netlify.app
 2. VITE_SANITY_PROJECT_ID
 3. VITE_SANITY_TOKEN
 
-### On the google cloud platform it is needed to add the under the credential section, the urls that its going to be used. (create a new google cloud project)
+### On the google cloud platform it is needed to add to the credential section, all the urls that its going to be used. (create a new google cloud project)
 URI:
 1. http://127.0.0.1:5173
 2. http://localhost:5173
